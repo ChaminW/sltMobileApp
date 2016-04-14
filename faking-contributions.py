@@ -17,7 +17,7 @@ call('git remote add origin https://' + username + ':' + password + '@github.com
 time = '12:00:00'
 offset = '-0500'
 minimum = 0
-maximum = 3
+maximum = 1
 filename = 'app/src/test/java/com/example/oshaniperera/slt/test.java'
 message = 'update unit test'
 

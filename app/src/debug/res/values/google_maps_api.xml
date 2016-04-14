@@ -4,10 +4,10 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F6:8C:CE:E2:A3:30:1A:50:41:BB:03:59:A3:73:61:EC:1D:69:1C:AB%3Bcom.example.oshaniperera.slt
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=0D:B4:10:70:B7:13:6D:7E:D6:13:67:C0:0E:F3:BF:90:1C:9B:1F:F4%3Bcom.example.thusitha.slt
 
     You can also add your credentials to an existing key, using this line:
-    F6:8C:CE:E2:A3:30:1A:50:41:BB:03:59:A3:73:61:EC:1D:69:1C:AB;com.example.oshaniperera.slt
+    0D:B4:10:70:B7:13:6D:7E:D6:13:67:C0:0E:F3:BF:90:1C:9B:1F:F4;com.example.thusitha.slt
 
     Alternatively, follow the directions here:
     https://developers.google.com/maps/documentation/android/start#get-key

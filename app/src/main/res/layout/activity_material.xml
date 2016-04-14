@@ -5,14 +5,49 @@
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:orientation="vertical"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.oshaniperera.slt.Material">
+    tools:context="com.example.thusitha.slt.Material"
+    android:background="#b1b1b4">
 
-    <ListView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/home"
+            android:background="#bebfcf"
+            android:onClick="icon"/>
+        <TextView
+            android:id="@+id/tvwelcome"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textSize="40dp"
+            android:text="MATERIALS"
+            android:background="#0d1996"
+            android:textAlignment="center"
+            android:textColor="#f9f9fa"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+    </LinearLayout>
 
 </RelativeLayout>

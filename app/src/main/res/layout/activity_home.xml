@@ -1,77 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-
-    tools:context="com.example.oshaniperera.slt.Home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.thusitha.slt.Home"
     android:background="#2e96ec">
+
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_below="@+id/tvwelcome"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout1"
         android:id="@+id/textView"
         android:textSize="30dp"/>
 
-    <TextView
-        android:id="@+id/tvwelcome"
+    <LinearLayout
+        android:id="@+id/layout1"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:textSize="40dp"
-        android:text="Welcome"
-        android:background="#0d1996"
-        android:textAlignment="textStart"
-        android:textColor="#f9f9fa"
-        />
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/home"
+            android:background="#0d1996"/>
+        <TextView
+            android:id="@+id/tvwelcome"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textSize="40dp"
+            android:text="Welcome"
+            android:background="#0d1996"
+            android:textAlignment="center"
+            android:textColor="#f9f9fa"
+            />
+    </LinearLayout>
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="70dp"
-        android:text="My Tasks"
+        android:text="   My Tasks"
         android:id="@+id/btasks"
         android:layout_gravity="center_vertical"
         android:background="#1e77c6"
         android:textSize="35dp"
         android:layout_below="@+id/textView"
         android:textAlignment="textStart"
-        android:onClick="myTasks"
+        android:onClick="btasks"
         />
+
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="70dp"
-        android:text="My Contacts"
-        android:id="@+id/bcontacts"
-        android:layout_gravity="center_vertical"
-        android:background="#2e96ec"
-        android:textSize="35dp"
-        android:layout_below="@+id/btasks"
-        android:textAlignment="textStart"/>
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:text="Materials"
+        android:text="   Materials"
         android:id="@+id/breports"
-        android:layout_gravity="center_vertical"
-        android:background="#1e77c6"
-        android:textSize="35dp"
-        android:textAlignment="textStart"
-        android:layout_below="@+id/bcontacts"/>
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:text="Fined Near by"
-        android:id="@+id/bnearby"
         android:layout_gravity="center_vertical"
         android:background="#2e96e6"
         android:textSize="35dp"
         android:textAlignment="textStart"
-        android:layout_below="@+id/breports"/>
+        android:layout_below="@+id/btasks"/>
     <Button
         android:layout_width="fill_parent"
         android:layout_height="70dp"
-        android:text="Log out"
-        android:id="@+id/blogout"
+        android:text="   Fined Near by"
+        android:id="@+id/bnearby"
         android:layout_gravity="center_vertical"
         android:background="#1e77c6"
+        android:textSize="35dp"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/breports"
+        android:onClick="bnearby"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:text="   Log out"
+        android:id="@+id/blogout"
+        android:layout_gravity="center_vertical"
+        android:background="#2e96e6"
         android:textSize="35dp"
         android:textAlignment="textStart"
         android:layout_below="@+id/bnearby"/>
